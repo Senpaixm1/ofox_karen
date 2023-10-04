@@ -1,0 +1,10 @@
+FILE_HASH=QU8AbduMOA/EFCthBVZR9Ljcm/wZrMrCG1RnBUDK5Mc=
+FILE_SIZE=5688313340
+METADATA_HASH=soR30Kowblso2RF9zf9aMWtZsZL4cZgBF8EV2aomCdQ=
+METADATA_SIZE=203314
+oplus_update_engine_verify_disable=0
+ota_target_version=CPH2401_11.F.05_2050_202309181316
+oplus_rom_version=V14.0.0
+security_patch=2023-10-05
+security_patch_vendor=2023-10-05
+oplus_separate_soft=21882
