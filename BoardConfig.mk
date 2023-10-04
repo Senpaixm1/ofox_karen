@@ -156,3 +156,27 @@ TW_EXCLUDE_APEX := false
 TW_NO_HAPTICS := false
 TW_Y_OFFSET := 115
 TW_H_OFFSET := -115
+
+# For local builds only
+#
+# TWRP zip installer
+ifneq ($(wildcard bootable/recovery/installer/.),)
+    USE_RECOVERY_INSTALLER := true
+    RECOVERY_INSTALLER_PATH := bootable/recovery/installer
+endif
+
+# Custom TWRP Versioning
+ifneq ($(wildcard device/common/version-info/.),)
+    # Uncomment the below line to use custom device version
+    include device/common/version-info/custom_twrp_version.mk
+
+    # version prefix is optional - the default value is "LOCAL" if nothing is set in device tree
+    CUSTOM_TWRP_VERSION_PREFIX := CPTB
+
+    ifeq ($(CUSTOM_TWRP_VERSION),)
+        CUSTOM_TWRP_VERSION := $(shell date +%Y%m%d)-01
+    endif
+endif
+#
+# end local build flags
+#
