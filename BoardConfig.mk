@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/oneplus/CPH2401
+DEVICE_PATH := device/oneplus/karen
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -46,7 +46,7 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_BOARD_PLATFORM := mt6893
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP557AL1,CPH2401
+TARGET_OTA_ASSERT_DEVICE := OP557AL1,karen
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2

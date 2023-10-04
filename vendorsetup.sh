@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="CPH2401"
+FDEVICE="karen"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep -w $FDEVICE)
@@ -65,7 +65,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     export FOX_NO_SAMSUNG_SPECIAL=1
     export FOX_ENABLE_APP_MANAGER=1
     export FOX_INSTALLER_DEBUG_MODE=1
-    export FOX_TARGET_DEVICES=CPH2401
+    export FOX_TARGET_DEVICES=karen
     export OF_USE_GREEN_LED=0
     export FOX_DELETE_AROMAFM=1
     export OF_QUICK_BACKUP_LIST="/boot;/dtbo;"
